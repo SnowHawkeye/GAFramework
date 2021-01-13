@@ -1,0 +1,24 @@
+
+
+genetic algorithm {
+    initial population
+    fitness function
+    selection
+    crossover
+    mutation
+}
+
+simulation {
+    parameters
+    stop condition (e.g. population has converged or computation time exceeded)
+}
+
+results {
+    solution quality
+    computation time
+    steps
+    curves
+    analytics
+}
+
+simulation.start()
