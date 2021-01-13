@@ -1,12 +1,19 @@
 
 
 genetic algorithm {
-    initial population
+    initial population {
+
+    define population
+    generate population
+    }
+
     fitness function
     selection
     crossover
     mutation
 }
+
+
 
 simulation {
     parameters
