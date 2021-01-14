@@ -1,8 +1,14 @@
 package main.kt.model
 
-abstract class Population {
+abstract class Population(
+    val individuals: List<Chromosome>
+) {
 
-    abstract class PopulationFactory<P: Population> {
+    fun findBest(): Int {
+        return individuals.maxOf { it.computeFitness() }
+    }
+
+    abstract class PopulationFactory<P : Population> {
         abstract fun generatePopulation(): P
     }
 }

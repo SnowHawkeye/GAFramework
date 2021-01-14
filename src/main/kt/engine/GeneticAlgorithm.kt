@@ -6,7 +6,7 @@ class GeneticAlgorithm<P : Population>(
     private val parameters: GAParameters<P>
 ) {
 
-    fun run(): P {
+    fun runGA(): P {
         with(parameters) {
             val currentPopulation = populationFactory.generatePopulation()
             var result: P = currentPopulation
@@ -15,9 +15,9 @@ class GeneticAlgorithm<P : Population>(
                     .selectionOperator()
                     .crossoverOperator()
                     .mutationOperator()
-
             }
             return result
         }
     }
+
 }
